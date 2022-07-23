@@ -1,10 +1,4 @@
 // Link to task: https://action.informatika.bg/problems/128
-// 
-// TODO: It seems like the task requires to count the inversions
-// in the array. This is done via merge sort, but the solution gets
-// only 60 out of 100 points. (I've tried also to copy paste various
-// inversion counters from the Internet but still get the same 60/100
-// result).
 
 #include <iostream>
 #include <vector>
@@ -72,6 +66,6 @@ int main() {
 		seatings[i] = el;
 	}
 	int64_t swapCount = mergeSort(seatings);
-	cout << swapCount << '\n';
+	printf("%lld\n", swapCount);
 	return 0;
 }
